@@ -1,0 +1,21 @@
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [Database\Seeders\-] does not exist.
+
+  at C:\Users\pc\Blog\vendor\laravel\framework\src\Illuminate\Container\Container.php:835
+    831▕ 
+    832▕         try {
+    833▕             $reflector = new ReflectionClass($concrete);
+    834▕         } catch (ReflectionException $e) {
+  ➜ 835▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    836▕         }
+    837▕ 
+    838▕         // If the type is not instantiable, the developer is attempting to resolve
+    839▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   C:\Users\pc\Blog\vendor\laravel\framework\src\Illuminate\Container\Container.php:833
+      ReflectionException::("Class Database\Seeders\- does not exist")
+
+  2   C:\Users\pc\Blog\vendor\laravel\framework\src\Illuminate\Container\Container.php:833
+      ReflectionClass::__construct("Database\Seeders\-")
